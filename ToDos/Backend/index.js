@@ -19,6 +19,7 @@ connectDB();
 app.use(
   cors({
     origin: "http://localhost:5176",
+    
     credentials: true,
   })
 );
@@ -26,5 +27,5 @@ app.use("/api/client", loginRoutes);
 app.use("/api/task", todoRouter);
 
 app.listen(port, () => {
- console.log(`Server running at http://localhost:${port}`);
+ console.log(`Server running at https://users-tasks-1.onrender.com`);
 });

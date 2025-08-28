@@ -22,7 +22,7 @@ const Signup = () => {
     try {
       console.log("Data Received", isForm);
       const res = await axios.post(
-        "http://localhost:5000/api/client/signup",
+        "https://users-tasks-1.onrender.com/api/client/signup",
         isForm
       );
       console.log("Server Responsing", res.data);
